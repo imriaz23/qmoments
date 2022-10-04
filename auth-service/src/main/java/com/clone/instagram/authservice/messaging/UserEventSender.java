@@ -42,8 +42,8 @@ public class UserEventSender {
         .id(user.getId())
         .username(user.getUsername())
         .email(user.getEmail())
-        .displayName(user.getProfile().getDisplayName())
-        .profilePictureUrl(user.getProfile().getProfilePictureUrl())
+        .displayName(user.getUserProfile().getDisplayName())
+        .profilePictureUrl(user.getUserProfile().getProfilePictureUrl())
         .build();
   }
 }
