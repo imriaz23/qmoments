@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: insta-auth
+  data:
+    mongodb:
+      database: instaclone_auth
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          configuration:
+            key:
+              serializer: org.apache.kafka.common.serialization.StringSerializer
+      bindings:
+        momentsUserChanged:
+          destination: moments.user.changed
+          content-type: application/json
+server:
+  port: 9000
