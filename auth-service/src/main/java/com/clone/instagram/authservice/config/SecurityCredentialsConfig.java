@@ -56,6 +56,11 @@ public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
         .antMatchers(HttpMethod.POST, "/signin").permitAll()
         .antMatchers(HttpMethod.POST, "/users").anonymous()
+        .antMatchers("/v3/api-docs").permitAll()
+        .antMatchers("/v2/api-docs").permitAll()
+        .antMatchers("/swagger-resources/**").permitAll()
+        .antMatchers("/swagger-ui/**").permitAll()
+        .antMatchers("/webjars/**").permitAll()
         .anyRequest().authenticated();
   }
 
