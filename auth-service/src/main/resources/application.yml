@@ -18,6 +18,10 @@ spring:
           content-type: application/json
 server:
   port: 9000
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
 security:
   basic:
     enable: false

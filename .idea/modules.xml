@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/auth-service/auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/insta-discovery/insta-discovery.iml" filepath="$PROJECT_DIR$/insta-discovery/insta-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insta-media-service/insta-media-service.iml" filepath="$PROJECT_DIR$/insta-media-service/insta-media-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/qmoments.iml" filepath="$PROJECT_DIR$/.idea/qmoments.iml" />
     </modules>
   </component>
